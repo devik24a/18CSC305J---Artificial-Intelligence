@@ -1,0 +1,6 @@
+from sklearn.naive_bayes import GaussianNB
+nb = GaussianNB()
+nb.fit(X_train,Y_train)
+Y_pred_nb = nb.predict(X_test)
+In [48]:
+Y_pred_nb.shape
