@@ -1,0 +1,6 @@
+from sklearn import svm
+sv = svm.SVC(kernel='linear')
+sv.fit(X_train, Y_train)
+Y_pred_svm = sv.predict(X_test)
+In [51]:
+Y_pred_svm.shape
